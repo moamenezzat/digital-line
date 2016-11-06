@@ -70,6 +70,13 @@ $(document).ready(function() {
 
   });
 
+  $("a[href^='#']").on("click", function(event) {
+            var target = $($(this).attr("href"));
+            event.preventDefault();
+            $("html, body").animate({
+                scrollTop: target.offset().top - 100
+            }, 1000);
+  });
 });
 
 $(window).on("load", function(){
@@ -82,6 +89,6 @@ $(window).on("load", function(){
           cover.fadeOut(600, function() {
               // body.removeClass("no-scroll")
           });
-    },500 )
+    },1000 )
     });
 });

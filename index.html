@@ -12,7 +12,7 @@
 
 <body>
     <div class="cover">
-    <div class="square-container">
+      <div class="square-container">
       <span class="square square-green"></span>
       <span class="square square-green"></span>
       <span class="square square-green"></span>
@@ -46,14 +46,14 @@
       <span class="square square-blue"></span>
       <span class="square square-blue"></span>
     </div>
-  </div>
+    </div>
     <nav>
         <div class="logo-container"></div>
         <div class="links-container">
             <a href="" class="nav-links">Home</a>
-            <a href="" class="nav-links">Our Services</a>
-            <a href="" class="nav-links">About Us</a>
-            <a href="" class="nav-links">Contact Us</a>
+            <a href="#services" class="nav-links">Our Services</a>
+            <a href="#about" class="nav-links">About Us</a>
+            <a href="#contact" class="nav-links">Contact Us</a>
         </div>
     </nav>
     <div class="hero">
@@ -76,7 +76,7 @@
             <a href="">Explore Our Services</a>
         </div>
     </div>
-    <div class="services">
+    <div class="services" id="services">
       <h1 class="section-title">Our Services</h1>
       <div class="second">
           <div class="ofr ofr1">
@@ -121,7 +121,108 @@
       </div>
 
     </div>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:300" rel="stylesheet">
+    <div class="about" id="about">
+      <h1 class="section-title">About Us</h1>
+      <div class="about-container">
+        <div class="part">
+          <h2>Mission</h2>
+          <p>
+            To make sure that we deliver results-oriented Digital marketing campaigns that enhance our clients’ brand awareness, improve their sales and foster their growth.
+          </p>
+        </div>
+        <div class="part">
+          <div class="left">
+            <h2>Vision</h2>
+            <p>
+              We want to be recognized as a leading provider of marketing and branding solutions. We are committed to earning our clients’ trust through outstanding execution and uncompromising dedication to their success.
+            </p>
+          </div>
+          <div class="right">
+            <h1 class="quote">Creativity and beyond</h1>
+          </div>
+        </div>
+        <div class="part">
+          <h2>Values</h2>
+          <ol>
+            <li>Passion drives all what we do.</li>
+            <li>We not only care about creativity we seek smart individuals too.</li>
+            <li>We are results-oriented punch</li>
+            <li>We make sure that we are great to work with.</li>
+            <li>We dive deep beyond the surface into your clients’ business.</li>
+            <li>Always be honest in dealing with others.</li>
+            <li>Work hard every day for our clients and for each other.</li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <h1 class="section-title">Contact Us</h1>
+      <div class="contact-sections">
+        <div class="left">
+          <form class="" action="index.html" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" value="" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" name="name" value="" id="email">
+            </div>
+            <div class="form-group">
+              <label for="text-area">Message</label>
+              <textarea type="text-area" name="name" value="" id="text-area"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" name="submit" value="Send Message">
+            </div>
+          </form>
+        </div>
+        <div class="right">
+          <table>
+            <tr>
+              <td>
+                Address:
+              </td>
+              <td>
+                19 Mahmoud Hassan Street- AL Marghany – Masr AL Gadida - Cairo - Egypt.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Mobile:
+              </td>
+              <td>
+                +2 01019000977
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Email:
+              </td>
+              <td>
+                Kafrawy@DigitalLine.co
+              </td>
+            </tr>
+          </table>
+          <div class="social-container">
+            <a href="http://fb.me/Digitalline.co" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167.657 167.657"><path d="M83.829,0.349C37.532,0.349,0,37.881,0,84.178c0,41.523,30.222,75.911,69.848,82.57v-65.081H49.626v-23.42h20.222V60.978c0-20.037,12.238-30.956,30.115-30.956c8.562,0,15.92,0.638,18.056,0.919v20.944l-12.399,0.006c-9.72,0-11.594,4.618-11.594,11.397v14.947h23.193l-3.025,23.42H94.026v65.653c41.476-5.048,73.631-40.312,73.631-83.154C167.657,37.881,130.125,0.349,83.829,0.349z" fill="#87c641"/></svg></a>
+            <a href="http://iinstagram.com/digitalline.co" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.758 89.758"><path d="M58.255,23.88H31.503c-4.27,0-7.744,3.474-7.744,7.744v26.752c0,4.27,3.474,7.745,7.744,7.745h26.752c4.27,0,7.745-3.474,7.745-7.745V31.624C66,27.354,62.526,23.88,58.255,23.88z M44.879,58.906c-7.667,0-13.905-6.238-13.905-13.906c0-7.667,6.238-13.905,13.905-13.905c7.668,0,13.906,6.238,13.906,13.905C58.785,52.667,52.546,58.906,44.879,58.906z M59.232,33.97c-1.815,0-3.291-1.476-3.291-3.29c0-1.814,1.476-3.29,3.291-3.29c1.814,0,3.29,1.476,3.29,3.29C62.522,32.494,61.046,33.97,59.232,33.97z"/><path d="M44.879,36.971c-4.426,0-8.03,3.602-8.03,8.028c0,4.428,3.604,8.031,8.03,8.031
+            		c4.428,0,8.029-3.603,8.029-8.031C52.908,40.574,49.306,36.971,44.879,36.971z"/><path  d="M44.879,0C20.094,0,0,20.094,0,44.879c0,24.785,20.094,44.879,44.879,44.879c24.785,0,44.879-20.094,44.879-44.879C89.758,20.094,69.664,0,44.879,0zM71.875,58.376c0,7.511-6.109,13.62-13.62,13.62H31.503c-7.51,0-13.62-6.109-13.62-13.62V31.624c0-7.51,6.11-13.62,13.62-13.62h26.752c7.511,0,13.62,6.11,13.62,13.62V58.376z"/></svg></a>
+            <a href="http://www.linkedin.com/company/digital-line-co" class="social-link"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            	 viewBox="0 0 112.196 112.196"><circle cx="56.098" cy="56.097" r="56.098"/><path STYLE="fill:#013968" d="M89.616,60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118
+            			c-3.705,0-5.906,2.491-6.878,4.903c-0.353,0.862-0.444,2.059-0.444,3.268v22.524H48.684c0,0,0.18-36.546,0-40.329h13.411v5.715
+            			c-0.027,0.045-0.065,0.089-0.089,0.132h0.089v-0.132c1.782-2.742,4.96-6.662,12.085-6.662
+            			C83.002,42.462,89.616,48.226,89.616,60.611L89.616,60.611z M34.656,23.969c-4.587,0-7.588,3.011-7.588,6.967
+            			c0,3.872,2.914,6.97,7.412,6.97h0.087c4.677,0,7.585-3.098,7.585-6.97C42.063,26.98,39.244,23.969,34.656,23.969L34.656,23.969z
+            			 M27.865,83.739H41.27V43.409H27.865V83.739z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400|Poppins:300,400" rel="stylesheet">
     <script
 			  src="https://code.jquery.com/jquery-3.1.1.min.js"
 			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="

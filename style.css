@@ -1,10 +1,12 @@
+*{
+  box-sizing: border-box;
+}
 html{
   background: #013968;
   background: white;
   font-family: 'Poppins', sans-serif;
   font-family: 'Open Sans', sans-serif;
   padding: 0;
-  box-sizing: border-box;
 }
 /*83c74e*/
 /*87c641*/
@@ -165,8 +167,12 @@ nav{
   font-weight: 300;
   font-size: 20px;
   text-transform: uppercase;
+  transition: all .6s ease-in-out;
 }
-
+.nav-links:hover{
+  color: #013968;
+  transition: all .6s ease-in-out;
+}
 .hero{
   margin-top: 9vh;
   display: flex;
@@ -179,7 +185,7 @@ nav{
   flex-direction: column;
   align-items: center;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 .right{
   width: 50%;
@@ -220,7 +226,7 @@ nav{
   line-height: 1;
 }
 
-.right h2{
+.right h2, .quote{
   float: right;
   clear: both;
     text-transform: capitalize;
@@ -229,7 +235,7 @@ nav{
     font-size: 35px;
     position: relative;
 }
-.right h2:before{
+.right h2:before,.quote:before{
   content: " ";
   width: 15px;
   height: 15px;
@@ -239,7 +245,7 @@ nav{
   top: -10px;
   left: -25px;
 }
-.right h2:after{
+.right h2:after, .quote:after{
   content: " ";
   width: 15px;
   height: 15px;
@@ -264,6 +270,7 @@ nav{
     border-radius: 20px;
     transition: all .4s ease-in-out;
     transform:translateY(-50px);
+    font-weight: 400;
 }
 .right a:hover,
 .right a:focus {
@@ -272,7 +279,7 @@ nav{
 }
 .services{
   background: #013968;
-  padding: 50px 0;
+  padding: 50px 0 80px;
 }
 .section-title{
   text-align: center;
@@ -436,4 +443,124 @@ nav{
 
 .services-title{
   display: block;
+}
+
+.about{
+  background: white;
+  padding: 50px 0;
+}
+.about-container{
+  position: relative;
+}
+.part{
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+.part:nth-child(2){
+  display: flex;
+
+}
+.part .left{
+  align-items: flex-start;
+}
+.part h2{
+  font-family: "Poppins", sans-serif;
+  color: #013968;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  line-height: 1;
+}
+
+.about-container .quote{
+  padding: 10px;
+  float: none;
+  /*position: absolute;
+  top: 10%;
+  left: 50%;*/
+  color: #87c641;
+  font-size: 30px
+}
+.contact{
+  background: #013968;
+  padding: 50px 0 10px;
+}
+.contact form{
+  padding: 20px;
+  margin: 0 auto;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 10px;
+  padding:0 20px;
+}
+.form-group:first-child{
+  margin-top: 0px;
+}
+.form-group input, textarea{
+  border: 2px solid #87c641;
+  color: white;
+  border-radius: 10px;
+  width: 60%;
+  padding: 10px;
+  background: none;
+  color: white;
+  width: 250px;
+}
+.form-group input[type="submit"]{
+  width: 250px;
+  margin: 10px auto;
+  background: #87c641;
+  vertical-align: top;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all .6s ease-in-out;
+}
+.form-group input[type="submit"]:hover{
+  color: #87c641;
+  background: white;
+  font-weight: 400;
+  transition: all .6s ease-in-out;
+}
+.contact-sections{
+  display: flex;
+}
+.contact-sections .right{
+  color: white;
+  font-weight: 400;
+  justify-content: flex-start;
+  padding: 15px 60px;
+}
+
+.contact-sections .right table{
+  margin-top: 10px;
+}
+.contact-sections .right td:first-child{
+  color: #87c641;
+  vertical-align: top;
+}
+.contact-sections .right td:nth-child(2){
+  font-weight: 300;
+}
+
+div.social-container{
+  width:40%;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(0);
+}
+a.social-link{
+  width: 50px;
+  height: 50px;
+  transform: translate(0);
+}
+a.social-link svg{
+  fill:#87c641;
+  width: 40px;
 }
